@@ -1,0 +1,28 @@
+<div class="container">
+    <h1>Cadastro de usuário</h1>
+    <div class="row">
+        <div class="form-group" class="col-md-4">
+          <label for="name">Nome</label>
+          <input class="form-control" type="text" id="name" ng-model="user.name" name="fname" placeholder="Digite seu nome"/>          
+      	</div>
+      <div class="form-group" class="col-md-4">
+          <label for="email">E-mail</label>
+          <input class="form-control" type="email" id="email" ng-model="user.email" placeholder="Digite seu E-mail"/>
+      </div>
+      <div class="form-group" class="col-md-4">
+          <label for="phone">Telefone</label>
+          <input class="form-control" type="tel" id="phone" ng-model="user.phone" placeholder="Digite seu Telefone" OnlyNumber="true"/>
+      </div>
+      <div class="form-group" class="col-md-4">
+          <label for="sexo">Sexo</label>
+          <select class="form-control" id="sexo" ng-model="user.sex">
+              <option value="M">Masculino</option>
+              <option value="F">Feminino</option>
+          </select>
+      </div>
+
+      <button type="submit" class="btn btn-primary" ng-click="saveUser(user)">Salvar usuario</button>
+      <a href="#user" class="btn btn-primary">Voltar</a>
+        
+    </div>
+</div>
